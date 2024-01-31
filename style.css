@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Raleway&display=swap');
+    
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+#hero {
+    background-image: url("./design-assets/bgk-header.png");
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15% 0 15%; /* mein Vorschlag, ggf. anpassen */
+    padding: 15px 0 0 0;
+}
+
+.nav-right a {
+    padding: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+a:hover, a:active {
+    color:rgb(134, 215, 205);
+} 
+
+header {
+    text-align: center;
+    padding: 8% 20% 18% 20%;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 25px 0;
+}
+
+header p {
+    margin: 25px 0 50px 0;
+}
+
+header hr {
+    width: 7%;
+    border-color:rgb(134, 215, 205);
+}
+
+header button {
+    border: 2px solid turquoise;
+    background-color: transparent;
+    color: rgb(134, 215, 205);
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#neue-sektion {
+    background-image: url('./design-assets/bgk-middle.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* oder eine andere gewünscht Höhe */
+}
+
+.zentriertes-bild img {
+    display: block;
+    margin: auto;
+}
+
+#zweispaltige-sektion {
+    background-color: white;
+    display: flex;
+}
+
+.spalte1 {
+    width: 40vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.spalte1 img {
+    width:40vh; /* oder eine andere gewünschte Breite */
+    height: auto;
+}
+
+.spalte2 {
+    width: 60vh;
+    padding-left: 20px; /* oder ein anderer gewünschter Abstand */
+}
+
+.spalte2 h2, .spalte2 p {
+    text-align: left;
+}
+
+.spalte2 button {
+    border: 2px solid turquoise;
+    background-color: white;
+    color: rgb(134, 215, 205);
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#expertise {
+    text-align: center;
+}
+
+#expertise hr {
+    width: 7%;
+}
+
+.grid-container-expertise {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-item-expertise {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-item-expertise img {
+    margin: 0 auto;
+    min-height: 50px;;
+}
