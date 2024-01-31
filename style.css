@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Raleway&display=swap');
+    
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
 #hero {
     background-image: url("./design-assets/bgk-header.png");
+    background-size: cover;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     margin: 0 15% 0 15%; /* mein Vorschlag, ggf. anpassen */
+    padding: 15px 0 0 0;
 }
 
 .nav-right a {
@@ -29,11 +38,39 @@ a:hover, a:active {
 
 header {
     text-align: center;
-    margin: 0 15% 0 15%;
+    padding: 8% 20% 18% 20%;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 25px 0;
+}
+
+header p {
+    margin: 25px 0 50px 0;
+}
+
+header hr {
+    width: 7%;
+    border-color:rgb(134, 215, 205);
+}
+
+header button {
+    border: 2px solid turquoise;
+    background-color: transparent;
+    color: rgb(134, 215, 205);
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
 }
 
 #neue-sektion {
-    background-image: url('pfad-zum-hintergrundbild.jpg');
+    background-image: url('./design-assets/bgk-middle.png');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -75,7 +112,7 @@ header {
 .spalte2 button {
     border: 2px solid turquoise;
     background-color: white;
-    color: turquoise;
+    color: rgb(134, 215, 205);
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
@@ -83,10 +120,15 @@ header {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 #expertise {
     text-align: center;
+}
+
+#expertise hr {
+    width: 7%;
 }
 
 .grid-container-expertise {
@@ -106,4 +148,5 @@ header {
 
 .grid-item-expertise img {
     margin: 0 auto;
+    min-height: 50px;;
 }
