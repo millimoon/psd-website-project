@@ -5,23 +5,88 @@
 nav {
     display: flex;
     justify-content: space-between;
+    margin: 0 15% 0 15%; /* mein Vorschlag, ggf. anpassen */
 }
 
-.nav-left {
-    display: flex;
-    align-items: center;
+.nav-right a {
+    padding: 1em;
 }
 
-.nav-right {
-    width: 80%;
+nav a {
+    color: white;
+    text-decoration: none;
 }
 
 ul {
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
 }
 
-li {
+a:hover, a:active {
+    color:rgb(134, 215, 205);
+} 
+
+header {
+    text-align: center;
+    margin: 0 15% 0 15%;
+}
+
+#neue-sektion {
+    background-image: url('pfad-zum-hintergrundbild.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* oder eine andere gewünscht Höhe */
+}
+
+.zentriertes-bild img {
+    display: block;
+    margin: auto;
+}
+
+#zweispaltige-sektion {
+    background-color: white;
+    display: flex;
+}
+
+.spalte1 {
+    width: 40vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.spalte1 img {
+    width:40vh; /* oder eine andere gewünschte Breite */
+    height: auto;
+}
+
+.spalte2 {
+    width: 60vh;
+    padding-left: 20px; /* oder ein anderer gewünschter Abstand */
+}
+
+.spalte2 h2, .spalte2 p {
+    text-align: left;
+}
+
+.spalte2 button {
+    border: 2px solid turquoise;
+    background-color: white;
+    color: turquoise;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#expertise {
+    text-align: center;
 }
 
 .grid-container-expertise {
@@ -37,4 +102,8 @@ li {
 .grid-item-expertise {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.grid-item-expertise img {
+    margin: 0 auto;
 }
