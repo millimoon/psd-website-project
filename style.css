@@ -32,21 +32,25 @@ nav {
     padding: 10px 0 0 0;
 }
 
-/* .nav-left {
-    display: inline;
-} */
+.nav-left {
+    position: relative;
+}
 
-.nav-left img {
+.nav-left > img {
     min-width: 44px;
     height: auto;
 }
 
 #tajam {
     display: inline;
-    font-size: 20px;
+    font-size: 25px;
+    margin-left: 0.5em;
     background: -webkit-linear-gradient(90deg, rgba(129,207,205,1) 0%, rgba(102,147,198,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-160%);
 }
 
 .nav-right a {
@@ -118,9 +122,18 @@ header button {
     margin: auto;
 }
 
+.zentriertes-bild p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
 #zweispaltige-sektion {
     background-color: white;
     display: flex;
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .spalte1 {
@@ -129,18 +142,18 @@ header button {
     justify-content: flex-end;
 }
 
-
 .spalte1 img {
-    width:40vh; /* oder eine andere gewünschte Breite */
-    height: auto;
+    width: auto; /* Remove the width property to maintain proportional scaling */
+    height: auto; /* Remove the height property to maintain proportional scaling */
 }
 
 .spalte2 {
     width: 60vh;
-    padding-left: 20px; /* oder ein anderer gewünschter Abstand */
+    padding-left: 80px; /* oder anderen Wert nach Bedarf */
 }
 
-.spalte2 h2, .spalte2 p {
+.spalte2 h2,
+.spalte2 p {
     text-align: left;
 }
 
@@ -160,6 +173,7 @@ header button {
 
 #expertise {
     text-align: center;
+    margin-bottom: 8%;
 }
 
 #expertise h2 {
@@ -168,6 +182,7 @@ header button {
 
 #expertise h3 {
     font-weight: 200;
+    color: rgb(9, 8, 19)
 }
 
 #expertise hr {
@@ -232,6 +247,7 @@ header button {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 0.9em;
+    color: rgb(9, 8, 19)
     padding-top: 7%;
     padding-bottom: 0;
 }
@@ -240,6 +256,10 @@ header button {
 
 
 /* STYLES Team*/
+
+#employees h2, h3 {
+    color: white;
+}
 
 #employees {
     
@@ -279,7 +299,112 @@ header button {
 }
 
 
+/* KONTAKT*/
+#kontakt-sektion {
+    display: flex;
+    background-color: white;
+}
+
+.spalte-links, .spalte-rechts {
+    width: 50%;
+    padding: 20px;
+}
+.spalte-links {
+    padding-left: 100px; 
+}
+.spalte-rechts {
+    padding-right: 100px; 
+}
+.spalte-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.spalte-links h2, .spalte-rechts h2 {
+    text-align: left;
+    
+}
+
+.spalte-links form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+}
+
+.spalte-links form input, .spalte-links form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.spalte-links form textarea {
+    height: calc(8 * 20px); /*Proportion des größeren Textfeldes*/
+}
+
+.spalte-links button {
+    border: 2px solid turquoise;
+    background-color:white;
+    color: turquoise;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.logo-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Erstellt 2 Spalten */
+    grid-template-rows: repeat(5, 1fr); /* Erstellt 5 Reihen */
+    grid-gap: 10px; /* Fügt einen Abstand zwischen den Logos hinzu */
+}
+
+.logo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Stellt sicher, dass das Logo seine Proportionen beibehält */
+}
+
+.logo-spalte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-spalte img {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.logo-spalte .logo-spezial {
+    width: 200px; 
+    height: 60px; 
+    object-fit: contain;
+}
+
+.spalte-rechts img {
+    width: 200px; 
+    height: 30px; 
+    object-fit: contain;
+}
+
+
 /* STYLES Footer*/
+footer h3 {
+    color: white;
+}
 
 footer {
     background-image: url('./design-assets/bgk-footer.png');
