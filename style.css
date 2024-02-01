@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+
 }
 
 #hero {
@@ -150,3 +151,106 @@ header button {
     margin: 0 auto;
     min-height: 50px;;
 }
+
+
+
+
+/* STYLES Team*/
+
+#employees {
+    
+    background-image: url('./design-assets/bgk-header.png');
+    background-size: cover;
+    color: white;
+    padding: 1em;
+    
+}
+.employeesHeader {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.employeesImages{
+    
+    size: 220px 230px;
+    margin-top: 4em;
+    margin-left: 15em;
+    margin-right: 15em;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.person {
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.job {
+    
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+
+/* STYLES Footer*/
+
+footer {
+    background-image: url('./design-assets/bgk-footer.png');
+    background-size: cover;
+    color: white;
+    padding: 4em;
+    display: flex;
+}
+
+.upperfooter {
+    padding: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about {
+ max-width: 25%;
+ padding: 2rem;
+}
+.aboutLogo {
+    margin: 2rem;
+    margin-top: -1rem;
+    height: 25%;
+    width: auto;
+    display: flex;
+}
+
+.branding {
+    margin: 1rem;
+    font-size: 40px;
+    font-weight: 100;
+    color: aqua;   
+}
+.terms {
+    color: white;
+    margin:;
+    padding: 2rem;
+}
+
+.address {
+    margin-top: 6rem;
+    padding: 3rem;
+    max-width: 20%;
+    display:flex;
+}
+
+
+.Stayintouch {
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+    
+
