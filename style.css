@@ -1,8 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Raleway&display=swap');
-    
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@700&display=swap');
+
 body {
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(124, 123, 131);
+    line-height: 1.6em;
+}
+
+h1 {
+    font-family: Calisto MT,Bookman Old Style,Bookman,Goudy Old Style,Garamond,Hoefler Text,Bitstream Charter,Georgia,serif; 
+    color: rgb(50, 49, 68);
+    color: white;
+}
+
+h2, h3 {
+    font-family: Calisto MT,Bookman Old Style,Bookman,Goudy Old Style,Garamond,Hoefler Text,Bitstream Charter,Georgia,serif; 
+    color: rgb(50, 49, 68)
 }
 
 #hero {
@@ -13,8 +27,26 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 15% 0 15%; /* mein Vorschlag, ggf. anpassen */
-    padding: 15px 0 0 0;
+    padding: 10px 0 0 0;
+}
+
+/* .nav-left {
+    display: inline;
+} */
+
+.nav-left img {
+    min-width: 44px;
+    height: auto;
+}
+
+#tajam {
+    display: inline;
+    font-size: 20px;
+    background: -webkit-linear-gradient(90deg, rgba(129,207,205,1) 0%, rgba(102,147,198,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-right a {
@@ -24,6 +56,9 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 0.9em;
 }
 
 ul {
@@ -38,7 +73,7 @@ a:hover, a:active {
 
 header {
     text-align: center;
-    padding: 8% 20% 18% 20%;
+    padding: 10% 20% 18% 20%;
     color: white;
 }
 
@@ -127,26 +162,76 @@ header button {
     text-align: center;
 }
 
+#expertise h2 {
+    margin: 6% 0 0 0;
+}
+
+#expertise h3 {
+    font-weight: 200;
+}
+
 #expertise hr {
     width: 7%;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    color: rgb(197, 196, 200)
 }
 
 .grid-container-expertise {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 3px;
+    /* grid-gap: 20px; */
     width: 80%;
     margin: 0 auto;
     align-items: center;
     text-align: center;
+    overflow: hidden;
+    gap: var(--gap);
+    --gap: 2rem;
+    --line-offset: calc(var(--gap) / 2);
+    --line-thickness: 1px;
+    --line-color: rgb(235, 235, 235);
+}
+
+/* Pseudo Element Shared Styling */
+.grid-item-expertise::before, 
+.grid-item-expertise::after {
+   content: '';
+   position: absolute;
+   background-color: var(--line-color);
+   z-index: 1;
+}
+
+/* Row Borders */
+.grid-item-expertise::after {
+  inline-size: 100vw;
+  block-size: var(--line-thickness);
+  inset-inline-start: 0;
+  inset-block-start: calc(var(--line-offset) * -1);
+}
+/* Column Borders */
+.grid-item-expertise::before {
+  inline-size: var(--line-thickness);
+  block-size: 100vh;
+  inset-inline-start: calc(var(--line-offset) * -1);
 }
 
 .grid-item-expertise {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 5%;
+    position: relative;
 }
 
 .grid-item-expertise img {
     margin: 0 auto;
     min-height: 50px;;
+}
+
+.item-expertise-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 0.9em;
+    padding-top: 7%;
+    padding-bottom: 0;
 }
