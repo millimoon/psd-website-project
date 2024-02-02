@@ -261,7 +261,8 @@ header button {
 #employees {
     
     background-image: url('./design-assets/bgk-header.png');
-    background-size: cover;
+    background-size: 100%;
+
     color: white;
     padding: 1em;
     
@@ -271,29 +272,63 @@ header button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2em;
+
 }
 
 .employeesImages{
     
     size: 220px 230px;
-    margin-top: 4em;
+    padding: 3rem;
+    margin-top: -3rem;
     margin-left: 15em;
     margin-right: 15em;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-evenly;   
 }
 
 .person {
-
+    
+    padding: 6rem;
+    margin-top: -8rem;
+    margin-left: 11em;
+    margin-right: 12em;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around; 
 }
 
 .job {
     
+    padding: 5rem;
+    margin-top: -11.4rem;
+    margin-left: 12em;
+    margin-right: 14em;
     display: flex;
-    justify-content: space-evenly;  
+    justify-content: space-around;  
 }
+
+.hiring {
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#employees button {
+    background: transparent;
+    color: aqua;
+    height: 2.8rem;
+    width: 10rem;
+    margin-top: 1rem;
+
+    margin-bottom: 3rem;
+    opacity: 0.4;
+    border-color: aqua;
+    border-width: 4px solid;
+    
+ }
+
+
 
 
 /* KONTAKT*/
@@ -399,33 +434,35 @@ header button {
 
 
 /* STYLES Footer*/
-footer h3 {
-    color: white;
-}
 
 footer {
     background-image: url('./design-assets/bgk-footer.png');
     background-size: cover;
     color: white;
-    padding: 4em;
+    padding: 1em;
     display: flex;
 }
 
+
+
 .upperfooter {
-    padding: 4em;
+    padding: 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .about {
- max-width: 25%;
+ max-width: 20%;
  padding: 2rem;
+ margin-left:10rem;
+ font-size: medium;
 }
 .aboutLogo {
     margin: 2rem;
-    margin-top: -1rem;
-    height: 25%;
+    margin-left: 0.6rem;
+    margin-top: 0.8rem;
+    height: 20%;
     width: auto;
     display: flex;
 }
@@ -436,27 +473,68 @@ footer {
     font-weight: 100;
     color: aqua;   
 }
+.studiologo 
+{margin-left: -2rem;}
+
 .terms {
+    margin-left:-2rem;
     color: white;
-    /*margin:;*/
     padding: 2rem;
+    display: flex;
+   justify-content: space-between;
 }
 
 .address {
-    margin-top: 6rem;
+    margin-top: 1rem;
     padding: 3rem;
-    max-width: 20%;
-    display:flex;
+}
+    
+
+.phone {
+    margin-top: -1rem;
+    margin-left: -2rem;
 }
 
+.newsletter {
+    margin-top: 5rem;
+    margin-right:15rem;
 
-.Stayintouch {
-    margin: 4rem;
+}
+.subscribe {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 4rem;
+    padding: 2rem;
 }
 
+input[type="email"] {
+    
+    padding: 1rem;
+    min-width: 15rem;
+    background: transparent;
+   
+  border: thin solid white;
+
+
+}
+footer button {
+    
+    height: 3.2rem;
+    width: 4.5rem;
+    margin: 1rem;
+    opacity: 0.4;
+}
+
+.socialmedia {
+    margin: 0.5rem;
+   display:flex;
+justify-content: space-between;
+}
 
 
     
 
+h4 {
+    font-weight: bold;
+    
+}
