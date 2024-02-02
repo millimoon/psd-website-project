@@ -404,7 +404,7 @@ header button {
     grid-template-columns: repeat(2, 1fr); /* Erstellt 2 Spalten */
     /* grid-template-rows: repeat(5, 1fr);  Erstellt 5 Reihen */
     grid-auto-rows: min-content;
-    grid-gap: 10px; /* Fügt einen Abstand zwischen den Logos hinzu */
+    grid-gap: 10px;
 }
 
 .logo-item {
