@@ -133,25 +133,32 @@ header button {
 #zweispaltige-sektion {
     background-color: white;
     display: flex;
-    height: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    height: 500px;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    align-items: flex-start; 
 }
 
 .spalte1 {
-    width: 40vh;
+    flex: 1;
     display: flex;
     justify-content: flex-end;
+    height: 100%; /* Setzt die Höhe des Containers auf 100% der Sektion */
 }
 
 .spalte1 img {
-    width: auto; /* Remove the width property to maintain proportional scaling */
-    height: auto; /* Remove the height property to maintain proportional scaling */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(0.6);
+    margin-left: 65%;
 }
 
 .spalte2 {
-    width: 60vh;
-    padding-left: 80px; /* oder anderen Wert nach Bedarf */
+    flex: 1;
+    padding-left: 80px; / oder anderen Wert nach Bedarf */
+    padding-top:  44px;
+    padding-right: 120px;
 }
 
 .spalte2 h2,
