@@ -10,7 +10,6 @@ body {
 
 h1 {
     font-family: Calisto MT,Bookman Old Style,Bookman,Goudy Old Style,Garamond,Hoefler Text,Bitstream Charter,Georgia,serif; 
-    color: rgb(50, 49, 68);
     color: white;
 }
 
@@ -18,6 +17,8 @@ h2, h3 {
     font-family: Calisto MT,Bookman Old Style,Bookman,Goudy Old Style,Garamond,Hoefler Text,Bitstream Charter,Georgia,serif; 
     color: rgb(50, 49, 68)
 }
+
+/* STYLES Navbar & Hero */
 
 #hero {
     background-image: url("./design-assets/bgk-header.png");
@@ -45,7 +46,7 @@ nav {
     display: inline;
     font-size: 25px;
     margin-left: 0.5em;
-    background: -webkit-linear-gradient(90deg, rgba(129,207,205,1) 0%, rgba(102,147,198,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(129,207,205,1) 0%, rgba(102,147,198,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: absolute;
@@ -53,11 +54,12 @@ nav {
     transform: translateY(-160%);
 }
 
-.nav-right a {
-    padding: 1em;
+.nav-right {
+    flex-wrap: wrap;
 }
 
-nav a {
+.nav-right a {
+    padding: 1em;
     color: white;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -114,7 +116,7 @@ header button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh; /* oder eine andere gewünscht Höhe */
+    height: 50vh; /* oder eine andere gewünscht Höhe */
 }
 
 .zentriertes-bild img {
@@ -170,6 +172,8 @@ header button {
     cursor: pointer;
     border-radius: 3px;
 }
+
+/* STYLES Expertise*/
 
 #expertise {
     text-align: center;
@@ -297,6 +301,11 @@ header button {
 
 
 /* KONTAKT*/
+
+#kontakt-sektion h2 {
+    color: rgb(50, 49, 68);
+}
+
 #kontakt-sektion {
     display: flex;
     background-color: white;
@@ -320,7 +329,7 @@ header button {
 
 .spalte-links h2, .spalte-rechts h2 {
     text-align: left;
-    
+    margin-bottom: 30px;
 }
 
 .spalte-links form {
@@ -331,7 +340,7 @@ header button {
 }
 
 .spalte-links form input, .spalte-links form textarea {
-    width: 100%;
+    width: 150%;
     margin-bottom: 10px;
     padding: 10px;
     box-sizing: border-box;
